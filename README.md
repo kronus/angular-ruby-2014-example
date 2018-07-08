@@ -45,7 +45,7 @@ For testing purposes:
 1) Open Terminal
 
 	git clone https://github.com/kronus/angular-ruby-2014-example.git
-	cd CRUD
+	cd angular-ruby-2014-example/CRUD
 	bundle install --without production
 	bower install
 	rake db:migrate
@@ -53,39 +53,6 @@ For testing purposes:
 	rails server
 
 2) Open [http://localhost:3000](http://localhost:3000/) using [Chrome](https://www.google.com/chrome)
-
-##Tests
-
-Note: Make sure that you have [PhantomJS](http://phantomjs.org/) installed on your machine.
-
-Before running tests match the development schema to the test database (only once)
-
-    rake db:test:clone
-
-Running Rails specs only:
-
-    rspec
-
-
-Running JavaScript specs only:
-
-    teaspoon
-
-Running all tests with [Guard](https://github.com/guard/guard) and [Spork](https://github.com/sporkrb/spork)
-
-    guard
-
-
-##Version history
-Check the [CHANGELOG file](https://github.com/sectore/CafeTownsend-Angular-Rails/blob/master/CHANGELOG.md) for details, please.
-
-##License
-`CafeTownsend-Angular-Rails` is licensed for use under the terms of the MIT License. Check the [LICENSE file](https://github.com/sectore/CafeTownsend-Angular-Rails/blob/master/LICENSE.md) for details, please.
-
-##Author
-Jens Krause // [WEBSECTOR.DE](http://www.websector.de)
-
-[![Build Status](https://travis-ci.org/sectore/CafeTownsend-Angular-Rails.png?branch=master)](https://travis-ci.org/sectore/CafeTownsend-Angular-Rails/) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sectore/cafetownsend-angular-rails/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 # angular-ruby-2014-example
 I modified the project to correct insert, update issues with European calendar format - added jQuery datepicker, which enters the date for the end user. At little bit of style change, showing the KRONUS logo, but other than that, it is the CafeTownsend-Angular project.
