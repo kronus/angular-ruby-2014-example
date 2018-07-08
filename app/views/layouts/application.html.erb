@@ -1,31 +1,23 @@
 <!doctype html>
 <html lang="en" ng-app="cafeTownsend">
 <head>
-  <title>CafeTownsend-AngularJS-Rails</title>
-  <%= include_jquery(defer: true) %>
-  <%= javascript_include_tag('application', defer: true) -%>
-  <%= stylesheet_link_tag "application" %>
-  <%= csrf_meta_tags %>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="http://www.kronusproductions.com/assets/images/favicon.png" />
+	<title>KRONUS Productions L.L.C. - CRUD App - Angular & Ruby</title>
+	<%= include_jquery(defer: true) %>
+	<%= javascript_include_tag('application', defer: true) -%>
+	<%= stylesheet_link_tag "application" %>
+	<%= csrf_meta_tags %>
 </head>
 
 <body>
-
+<%= render "layouts/header" %>
 <div class="main-view"
    ng-controller="MainController"
    ng-class="{login:'main-view-loggedIn',
     employees:'main-view-employees',
     edit:'main-view-edit',
     create:'main-view-create'}[viewState.current]">
-  <header ng-controller="HeaderController">
-    <div
-      ng-class="{'hide-header':!authorized()}"
-      class="header-container"
-    >
-      <p class="main-button" ng-click="logout()">Logout</p>
-      <p id="greetings">Hello {{user.name}}</p>
-    </div>
-  </header>
 
   <div class="main-view-wrapper"
      ng-class="{login:'main-view-wrapper-loggedIn',
@@ -36,19 +28,7 @@
       class="main-view-container"
       ></div>
   </div>
-
-  <footer>
-    <p>
-      Built with <a href="http://angularjs.org/">AngularJS</a>,
-      <a href="http://coffeescript.org/">CoffeeScript</a>,
-      <a href="http://bourbon.io/">Bourbon</a> and <a href="http://rubyonrails.org/">Rails</a>.<br/>
-    </p>
-
-    <p>
-      <a href="https://github.com/sectore/CafeTownsend-Angular-Rails">Get source code</a> by
-      <a href="http://www.websector.de">Jens Krause</a> @2012-2014
-    </p>
-  </footer>
+  <%= render "layouts/footer" %>
 </div>
 </body>
 </html>

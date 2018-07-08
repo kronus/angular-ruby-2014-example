@@ -15,5 +15,13 @@ angular.module('cafeTownsend').controller 'MainController'
   $scope.authorized = ->
     SessionService.authorized()
 
+  # mCopyRight
+  # ------------------------------------------------------------
+  $scope.mCopyRight = ->
+    theDate = new Date()
+    $scope.mFullYear = ' ' + theDate.getFullYear()
+
+  $scope.mCopyRight()
+
   init()
 ]

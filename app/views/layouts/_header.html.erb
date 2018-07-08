@@ -1,0 +1,11 @@
+<header ng-controller="HeaderController">
+<p
+  ng-class="{'hide-header':!authorized()}"
+  class="header-container"
+>
+	<ul class="header-ul">
+		<li id="greetings"><p>Hello {{user.name}}</p></li>
+		<li class="main-button" ng-click="logout()"><p>Logout</p></li>
+	</ul>
+</p>
+</header>
