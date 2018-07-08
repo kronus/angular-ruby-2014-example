@@ -1,4 +1,8 @@
-# CafeTownsend-Angular-Rails Changelog
+# CRUD Changelog
+
+## Version 0.8.0 // 2014-03-17
+
+* Added jQuery datepicker
 
 ## Version 0.7.0 // 2014-01-01
 
