@@ -44,8 +44,8 @@ For testing purposes:
 ##Local installation
 1) Open Terminal
 
-	git clone git://github.com/sectore/CafeTownsend-Angular-Rails.git
-	cd CafeTownsend-Angular-Rails
+	git clone https://github.com/kronus/angular-ruby-2014-example.git
+	cd CRUD
 	bundle install --without production
 	bower install
 	rake db:migrate
@@ -88,3 +88,4 @@ Jens Krause // [WEBSECTOR.DE](http://www.websector.de)
 [![Build Status](https://travis-ci.org/sectore/CafeTownsend-Angular-Rails.png?branch=master)](https://travis-ci.org/sectore/CafeTownsend-Angular-Rails/) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sectore/cafetownsend-angular-rails/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 # angular-ruby-2014-example
+I modified the project to correct insert, update issues with European calendar format - added jQuery datepicker, which enters the date for the end user. At little bit of style change, showing the KRONUS logo, but other than that, it is the CafeTownsend-Angular project.
