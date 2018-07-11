@@ -1,6 +1,6 @@
 #AngularJS (v.1.2.13) + Rails (v.4.0.2) port of Cafe Townsend application + I added jQuery Datepicker, which solves insert errors of the original project
 
-My live demo - http://kronusproductions.com:3000 - should be up soon - give me a couple of days
+My live demo - http://kronusproductions.com:3000 - is available as proof
 
 ##About
 [AngularJS](http://http://angularjs.org/) and [Rails](http://rubyonrails.org/) port of the famous Cafe Townsend application originally written in ActionScript.
